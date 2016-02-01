@@ -1,0 +1,28 @@
+{
+  "name": "console",
+  "description": "js console fun",
+  "version": "1.0.0",
+  "author": "Dan Flettre <fletd01@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/Flet/console/issues"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "semistandard": "*",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0",
+    "watchify": "^3.7.0"
+  },
+  "homepage": "https://github.com/Flet/console",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flet/console.git"
+  },
+  "scripts": {
+    "test": "tape test/*.js | tap-spec && semistandard"
+  },
+  "private": "true"
+}

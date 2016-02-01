@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+body {
+  font-size: 15px;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  background: black;
+  color: lightgreen;
+}
+
+.error { color: red}
+.debug { color: blue}
+
+#consolelog div {
+  line-height: 25px;
+}
+
+#consolelog {
+  border: 2px solid black;
+  border-bottom: 1px solid lawngreen;
+}
+
+#consoleinput {
+  font-size: 15px;
+  border-style: none;
+  color: lightgreen;
+  background: black;
+  bottom:0px;
+  width: 95%;
+  height: 30px;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
