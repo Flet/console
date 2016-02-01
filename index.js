@@ -39,7 +39,7 @@ function typeMessage () {
   }
 }
 
-window.setInterval(typeMessage, 10);
+window.setInterval(typeMessage, 20);
 
 var originalConsole = null;
 
