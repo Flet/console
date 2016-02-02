@@ -70,7 +70,7 @@ log.onkeydown = function (e, message) {
     var inputField = document.getElementById('consoleinput');
     var evalString = inputField.value;
     window.commandHistory.push(evalString);
-    window.currentCommand = window.commandHistory.length - 1;
+    window.currentCommand = window.commandHistory.length;
     console.log('>' + evalString);
 
     try {
@@ -82,11 +82,11 @@ log.onkeydown = function (e, message) {
       inputField.value = '';
     }
   }
-}
+};
 
 document.onkeydown = function (e) {
   if (e.code === 'ArrowUp') {
-    if (window.currentCommand === 0) return;
+    if (window.currentCommand < 1) return;
     window.currentCommand--;
     document.getElementById('consoleinput').value = window.commandHistory[window.currentCommand];
   }
