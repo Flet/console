@@ -1,8 +1,5 @@
 'use strict';
 
-var log = document.getElementById('consoleinput');
-log.addEventListener('keypress', evalConsoleInput);
-
 window.messages = [];
 window.currentMessage = undefined;
 window.currentLine = undefined;
@@ -66,8 +63,10 @@ window.console = {
   }
 };
 
-function evalConsoleInput (e, message) {
-  if (e.code === 'Enter') {
+
+var log = document.getElementById('consoleinput');
+log.onkeydown = function (e, message) {
+  if (e.keyCode === 13 || e.code === 'Enter') {
     var inputField = document.getElementById('consoleinput');
     var evalString = inputField.value;
     window.commandHistory.push(evalString);
